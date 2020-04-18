@@ -43,9 +43,6 @@ RUN docker-php-ext-install -j$(nproc) \
     opcache \
     zip
 
-RUN pecl install redis &&\
-    docker-php-ext-enable redis
-
 # enable apache modules and
 # test apache configuration
 RUN a2enmod rewrite &&\
