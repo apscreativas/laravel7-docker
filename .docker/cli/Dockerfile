@@ -6,7 +6,6 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     apt-utils \
-    ca-certificates \
     libxml2-dev \
     libpng-dev \
     libcurl4-openssl-dev \
